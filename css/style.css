@@ -1,0 +1,12 @@
+@import "normalize.css";
+
+/**
+ * Portfolio CSS
+ *
+ * Copyright @ Jun 2020
+ */
+
+@import "mobile/mobile.css";
+
+@import "tablet/tablet.css" (min-width: 600px) and (min-height: 600px) and (max-width: 1159px);
+@import "desktop/desktop.css" (min-width: 1200px);

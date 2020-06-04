@@ -1,0 +1,57 @@
+/**
+ * Landing page layout for large & wide devices.
+ * These values are default for desktops +.
+ *
+ * Copyright @ Jun 2020
+ */
+
+#page-container {
+  background-color: var(--page-background-color);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  box-shadow: var(--z-depth-2);
+  grid-template-areas: '. . . .' '. who what .';
+  grid-template-columns: 5% 1fr 1fr 5%;
+  grid-template-rows: 5% 1fr;
+  height: 90%;
+  left: 10%;
+  min-height: 55rem;
+  top: 10%;
+  transform: translateY(100%);
+  width: 80%;
+
+  & .page {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+
+    & p {
+      font-size: 1vw;
+      line-height: 3.25vh;
+    }
+  }
+
+  & #who-page {
+    grid-template-rows: 5% 25% 1fr 5%;
+
+    & .header {
+      & p {
+        font-size: 2.25vw;
+        white-space: initial;
+        text-align: initial;
+      }
+    }
+  }
+
+  & #what-page {
+    & #projects-container {
+      & .project {
+        &:hover {
+          height: 263%;
+          margin-top: -36vh;
+        }
+      }
+    }
+  }
+}

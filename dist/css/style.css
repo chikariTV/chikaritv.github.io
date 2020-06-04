@@ -1,0 +1,811 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/**
+ * Portfolio CSS
+ *
+ * Copyright @ Jun 2020
+ */
+
+/**
+ * Landing page layout for mobile devices.
+ * These values are default for all layouts.
+ *
+ * Copyright @ Jun 2020
+ */
+
+#landing {
+  display: grid;
+  grid-template-areas: '. logo .' '. intro .' '. social .' '. nav .';
+  grid-template-columns: 5% 1fr 5%;
+  grid-template-rows: 10% 1fr 30% 10%;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  place-items: center
+}
+
+#landing p {
+    font-family: var(--custom-serif-font);
+  }
+
+#landing #intro {
+    text-align: center;
+    grid-area: intro
+  }
+
+#landing #intro p {
+      font-size: 8.5vw;
+    }
+
+#landing #intro span {
+      border-bottom: 0.3rem solid var(--secondary-color);
+    }
+
+#landing #social {
+    display: block;
+    grid-area: social;
+    padding: 0 5vw;
+    text-align: center
+  }
+
+#landing #social p {
+      font-size: 4.25vw;
+      -webkit-user-select: none;
+              user-select: none;
+      line-height: 2.5
+    }
+
+#landing #social p span {
+        display: none;
+      }
+
+#landing #social p a {
+        border: 0.2rem solid transparent;
+        padding: 0.5rem 1rem;
+        border-radius: 1.75rem;
+        text-decoration: none;
+        transition: all 0.2s ease
+      }
+
+#landing #social p a:nth-of-type(1) {
+          background: linear-gradient(to left, transparent 50%, hsl(264, 100%, 64%) 50%);
+          background-size: 200% 100%;
+          background-position: right bottom;
+          border-color: hsl(264, 100%, 64%);
+          color: hsl(264, 100%, 64%)
+        }
+
+#landing #social p a:nth-of-type(1):any-link {
+            color: hsl(264, 100%, 64%);
+          }
+
+#landing #social p a:nth-of-type(1):hover {
+            color: var(--background-color);
+          }
+
+#landing #social p a:nth-of-type(2) {
+          background: var(--secondary-color);
+          color: var(--black)
+        }
+
+#landing #social p a:nth-of-type(2):any-link {
+            color: var(--black);
+          }
+
+#landing #social p a:nth-of-type(3) {
+          background: linear-gradient(to left, transparent 50%, hsl(203, 89%, 53%) 50%);
+          background-size: 200% 100%;
+          background-position: right bottom;
+          border-color: hsl(203, 89%, 53%);
+          color: hsl(203, 89%, 53%)
+        }
+
+#landing #social p a:nth-of-type(3):any-link {
+            color: hsl(203, 89%, 53%);
+          }
+
+#landing #social p a:nth-of-type(3):hover {
+            color: var(--background-color);
+          }
+
+#landing #social p a:hover {
+          box-shadow: var(--z-depth-2);
+          background-position: left bottom;
+        }
+
+#landing .button-container {
+    display: block;
+    grid-area: nav;
+    grid-template-areas: 'who what';
+    opacity: 0;
+    overflow: hidden
+  }
+
+#landing .button-container #who-button {
+      grid-area: who;
+    }
+
+#landing .button-container #what-button {
+      grid-area: what;
+    }
+
+@media screen and (min-width: 320px) and (max-width: 1000px) and (orientation: landscape) {
+  #landing {
+    grid-template-rows: 10% 1fr 30% 10%
+  }
+      #landing #intro p {
+        font-size: 3.5vw;
+      }
+      #landing #social p {
+        font-size: 2.25vw
+      }
+
+        #landing #social p br {
+          display: none;
+        }
+
+        #landing #social p span {
+          display: initial;
+        }
+}
+
+/**
+ * Content page layout for mobile devices.
+ * These values are default for all layouts.
+ *
+ * Copyright @ Jun 2020
+ */
+
+#page-container {
+  display: inline-grid;
+  grid-template-areas: '. . . . . .' '. who . . what .' '. . . . . .';
+  grid-template-columns: 2.5% 1fr 2.5% 2.5% 1fr 2.5%;
+  grid-template-rows: 10% 1fr 10%;
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  transform: translateY(-100%);
+  width: calc(var(--number-of-pages) * 100%)
+}
+
+#page-container .page {
+    background-color: var(--page-background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--z-depth-2);
+    color: var(--black);
+    display: grid;
+    font-family: var(--custom-sans-font);
+    grid-template-columns: 5% 1fr 5%
+  }
+
+#page-container .page p {
+      font-size: 3.5vw;
+      grid-area: content;
+      line-height: 3vh;
+      margin: 0;
+      overflow-x: hidden;
+      white-space: pre-line;
+    }
+
+#page-container #who-page {
+    grid-area: who;
+    grid-template-areas: '. . .' '. heading .' '. content .' '. . .';
+    grid-template-rows: 5% 20% 1fr 5%
+  }
+
+#page-container #who-page .header {
+      color: var(--primary-color);
+      grid-area: heading
+    }
+
+#page-container #who-page .header p {
+        font-family: var(--custom-serif-font);
+        font-size: 5.5vw;
+        font-weight: 700;
+        line-height: normal;
+        overflow: hidden;
+      }
+
+#page-container #who-page p {
+      max-height: 56vh;
+    }
+
+#page-container #what-page {
+    grid-area: what;
+    grid-template-areas: '. . .' '. content .' '. . .' '. projects .' '. . .';
+    grid-template-rows: 5% 40% 2.5% 1fr 5%
+  }
+
+#page-container #what-page p {
+      max-height: 32vh;
+    }
+
+#page-container #what-page #projects-container {
+      grid-area: projects;
+      display: grid;
+      grid-template-areas: '. . .' '. p1 .' '. p2 .' '. p3 .' '. . .';
+      align-items: center;
+      justify-items: center;
+      place-items: center;
+      grid-template-rows: 5% 1fr 1fr 1fr 5%;
+      grid-template-columns: 5% 1fr 5%
+    }
+
+#page-container #what-page #projects-container .project {
+        border-radius: var(--border-radius);
+        box-shadow: var(--z-depth-2);
+        color: var(--page-background-color);
+        display: grid;
+        font-size: 1.6rem;
+        height: 9vh;
+        align-content: center;
+        justify-content: center;
+        place-content: center;
+        text-align: center;
+        transition: all 0.2s ease;
+        width: 100%
+      }
+
+#page-container #what-page #projects-container .project:nth-of-type(1) {
+          background-color: var(--primary-color-darker);
+          grid-area: p1;
+        }
+
+#page-container #what-page #projects-container .project:nth-of-type(2) {
+          background-color: var(--primary-color);
+          grid-area: p2;
+        }
+
+#page-container #what-page #projects-container .project:nth-of-type(3) {
+          background-color: var(--primary-color-lighter);
+          grid-area: p3;
+        }
+
+#page-container #what-page #projects-container .project:hover {
+          box-shadow: var(--z-depth-3);
+          height: 629%;
+          width: 111%;
+          margin-top: -34vh;
+          grid-area: p2;
+          z-index: 3;
+        }
+
+@media screen and (min-width: 320px) and (orientation: landscape) {
+      #page-container .page p {
+        font-size: 2vw;
+        line-height: 5.25vh;
+      }
+
+    #page-container #who-page {
+      grid-template-rows: 10% 25% 1fr 10%
+    }
+        #page-container #who-page .header p {
+          font-size: 3vw;
+          white-space: unset;
+          text-align: center;
+        }
+
+    #page-container #what-page {
+      grid-template-rows: 10% 40% 2.5% 1fr 10%
+    }
+
+      #page-container #what-page #projects-container {
+        display: inline-grid;
+        grid-template-rows: 10% 1fr 10%;
+        grid-template-columns: 10% 1fr 1fr 1fr 10%;
+        grid-template-areas: '. . . . .' '. p1 p2 p3 .' '. . . . .'
+      }
+
+        #page-container #what-page #projects-container .project {
+          height: 70%;
+          width: 90%
+        }
+
+          #page-container #what-page #projects-container .project:hover {
+            height: 266%;
+            width: 375%;
+          }
+}
+
+@media (min-width: 600px) and (min-height: 600px) and (max-width: 1159px) {
+
+/**
+ * Landing page layout for tablet devices.
+ *
+ * Copyright @ Jun 2020
+ */
+    #landing #intro p {
+      font-size: 5.5rem;
+    }
+}
+
+@media (min-width: 600px) and (min-height: 600px) and (max-width: 1159px) {
+
+/**
+ * Landing page layout for tablet devices.
+ *
+ * Copyright @ Jun 2020
+ */
+    #page-container .page p {
+      font-size: 3.5vw;
+    }
+
+  #page-container #who-page {
+    grid-template-rows: 5% 20% 5% 65% 5%
+  }
+
+    #page-container #who-page .header {
+      font-size: 3.75rem;
+      line-height: 3.75rem;
+    }
+    #page-container #what-page p {
+      font-size: 3vw;
+    }
+      #page-container #what-page #projects-container .project {
+        font-size: 2.5rem;
+      }
+      #page-container #what-page .button-container .button {
+        font-size: 2.2rem;
+      }
+}
+
+@media (min-width: 600px) and (min-height: 600px) and (max-width: 1159px) and screen and (orientation: landscape) {
+      #page-container .page p {
+        font-size: 2.25vw !important;
+      }
+
+    #page-container #who-page {
+      grid-template-rows: 5% 30% 5% 55% 5%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+
+/**
+ * Landing page layout for large & wide devices.
+ * These values are default for desktops +.
+ *
+ * Copyright @ Jun 2020
+ */
+
+
+#landing {
+  grid-template-areas: '. logo .' '. intro .' '. social .';
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: 10% 1fr 35%;
+  min-height: 60rem
+}
+    #landing #intro p {
+      font-size: 3.5vw;
+    }
+
+  #landing #social {
+    display: block;
+    grid-area: social;
+    padding: 0 11vw;
+    align-self: center;
+    justify-self: center;
+    place-self: center;
+    text-align: center
+  }
+
+    #landing #social p {
+      font-size: 1.5vw;
+      -webkit-user-select: none;
+              user-select: none
+    }
+
+      #landing #social p br {
+        display: none;
+      }
+
+      #landing #social p span {
+        display: initial;
+      }
+
+  #landing #nav {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+
+/**
+ * Landing page layout for large & wide devices.
+ * These values are default for desktops +.
+ *
+ * Copyright @ Jun 2020
+ */
+
+#page-container {
+  background-color: var(--page-background-color);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  box-shadow: var(--z-depth-2);
+  grid-template-areas: '. . . .' '. who what .';
+  grid-template-columns: 5% 1fr 1fr 5%;
+  grid-template-rows: 5% 1fr;
+  height: 90%;
+  left: 10%;
+  min-height: 55rem;
+  top: 10%;
+  transform: translateY(100%);
+  width: 80%
+}
+
+  #page-container .page {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0
+  }
+
+    #page-container .page p {
+      font-size: 1vw;
+      line-height: 3.25vh;
+    }
+
+  #page-container #who-page {
+    grid-template-rows: 5% 25% 1fr 5%
+  }
+      #page-container #who-page .header p {
+        font-size: 2.25vw;
+        white-space: initial;
+        text-align: initial;
+      }
+        #page-container #what-page #projects-container .project:hover {
+          height: 263%;
+          margin-top: -36vh;
+        }
+}

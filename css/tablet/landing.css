@@ -1,0 +1,13 @@
+/**
+ * Landing page layout for tablet devices.
+ *
+ * Copyright @ Jun 2020
+ */
+
+#landing {
+  & #intro {
+    & p {
+      font-size: 5.5rem;
+    }
+  }
+}

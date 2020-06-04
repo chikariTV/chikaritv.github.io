@@ -1,0 +1,145 @@
+/**
+ * Landing page layout for mobile devices.
+ * These values are default for all layouts.
+ *
+ * Copyright @ Jun 2020
+ */
+
+#landing {
+  display: grid;
+  grid-template-areas: '. logo .' '. intro .' '. social .' '. nav .';
+  grid-template-columns: 5% 1fr 5%;
+  grid-template-rows: 10% 1fr 30% 10%;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+
+  & p {
+    font-family: var(--custom-serif-font);
+  }
+
+  & #intro {
+    text-align: center;
+    grid-area: intro;
+
+    & p {
+      font-size: 8.5vw;
+    }
+
+    & span {
+      border-bottom: 0.3rem solid var(--secondary-color);
+    }
+  }
+
+  & #social {
+    display: block;
+    grid-area: social;
+    padding: 0 5vw;
+    text-align: center;
+
+    & p {
+      font-size: 4.25vw;
+      user-select: none;
+      line-height: 2.5;
+
+      & span {
+        display: none;
+      }
+
+      & a {
+        border: 0.2rem solid transparent;
+        padding: 0.5rem 1rem;
+        border-radius: 1.75rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+
+        &:nth-of-type(1) {
+          background: linear-gradient(to left, transparent 50%, hsl(264, 100%, 64%) 50%);
+          background-size: 200% 100%;
+          background-position: right bottom;
+          border-color: hsl(264, 100%, 64%);
+          color: hsl(264, 100%, 64%);
+
+          &:any-link {
+            color: hsl(264, 100%, 64%);
+          }
+
+          &:hover {
+            color: var(--background-color);
+          }
+        }
+
+        &:nth-of-type(2) {
+          background: var(--secondary-color);
+          color: var(--black);
+
+          &:any-link {
+            color: var(--black);
+          }
+        }
+
+        &:nth-of-type(3) {
+          background: linear-gradient(to left, transparent 50%, hsl(203, 89%, 53%) 50%);
+          background-size: 200% 100%;
+          background-position: right bottom;
+          border-color: hsl(203, 89%, 53%);
+          color: hsl(203, 89%, 53%);
+          &:any-link {
+            color: hsl(203, 89%, 53%);
+          }
+
+          &:hover {
+            color: var(--background-color);
+          }
+        }
+
+        &:hover {
+          box-shadow: var(--z-depth-2);
+          background-position: left bottom;
+        }
+      }
+    }
+  }
+
+  & .button-container {
+    display: block;
+    grid-area: nav;
+    grid-template-areas: 'who what';
+    opacity: 0;
+    overflow: hidden;
+
+    & #who-button {
+      grid-area: who;
+    }
+
+    & #what-button {
+      grid-area: what;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px) and (orientation: landscape) {
+  #landing {
+    grid-template-rows: 10% 1fr 30% 10%;
+
+    & #intro {
+      & p {
+        font-size: 3.5vw;
+      }
+    }
+
+    & #social {
+      & p {
+        font-size: 2.25vw;
+
+        & br {
+          display: none;
+        }
+
+        & span {
+          display: initial;
+        }
+      }
+    }
+  }
+}

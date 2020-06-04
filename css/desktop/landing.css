@@ -1,0 +1,45 @@
+/**
+ * Landing page layout for large & wide devices.
+ * These values are default for desktops +.
+ *
+ * Copyright @ Jun 2020
+ */
+
+
+#landing {
+  grid-template-areas: '. logo .' '. intro .' '. social .';
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: 10% 1fr 35%;
+  min-height: 60rem;
+
+  & #intro {
+    & p {
+      font-size: 3.5vw;
+    }
+  }
+
+  & #social {
+    display: block;
+    grid-area: social;
+    padding: 0 11vw;
+    place-self: center;
+    text-align: center;
+
+    & p {
+      font-size: 1.5vw;
+      user-select: none;
+
+      & br {
+        display: none;
+      }
+
+      & span {
+        display: initial;
+      }
+    }
+  }
+
+  & #nav {
+    display: none;
+  }
+}

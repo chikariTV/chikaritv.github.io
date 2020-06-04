@@ -1,0 +1,135 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#ECECEC">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#ECECEC">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ECECEC">
+    <title>ChikariTV</title>
+
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/noto/noto-serif-jp-v7-latin-regular.woff2"
+      crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/noto/noto-sans-jp-v24-latin-regular.woff2"
+      crossorigin>
+    <link rel="preload" href="dist/css/style.css" as="style">
+
+    <style>
+      /* noto-serif-jp-regular - latin */
+      @font-face {
+        font-family: 'Noto Serif JP';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Noto Serif JP'), local('NotoSerifJP-Regular'),
+          url('assets/fonts/noto/noto-serif-jp-v7-latin-regular.woff2') format('woff2'),
+          url('assets/fonts/noto/noto-serif-jp-v7-latin-regular.woff') format('woff');
+      }
+
+      /* noto-sans-jp-regular - latin */
+      @font-face {
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'),
+          url('assets/fonts/noto/noto-sans-jp-v24-latin-regular.woff2') format('woff2'),
+          url('assets/fonts/noto/noto-sans-jp-v24-latin-regular.woff') format('woff');
+      }
+
+      :root {
+        --primary-color: hsl(185, 48%, 67%);
+        --primary-color-darker: hsl(184, 73%, 35%);
+        --primary-color-lighter: hsl(185, 100%, 90%);
+        --secondary-color: hsl(43.477876106194714, 90.6650246305%, 57.8039215686%);
+        --background-color: hsl(230, 39%, 81%);
+        --page-background-color: #fff;
+        --black: #000;
+        --custom-serif-font: "Noto Serif JP";
+        --custom-sans-font: "Noto Sans JP";
+        --border-radius: 1.25rem;
+        --z-depth-2:
+          0 4px 5px 0 rgba(0, 0, 0, 0.14),
+          0 1px 10px 0 rgba(0, 0, 0, 0.12),
+          0 2px 4px -1px rgba(0, 0, 0, 0.3);
+        --z-depth-3:
+          0 8px 17px 2px rgba(0, 0, 0, 0.14),
+          0 3px 14px 2px rgba(0, 0, 0, 0.12),
+          0 5px 5px -3px rgba(0, 0, 0, 0.2);
+
+        a {
+          outline: 0;
+        }
+      }
+
+      ::-moz-selection {
+        background: hsl(43.477876106194714, 90.6650246305%, 57.8039215686%);
+        color: #ececec;
+      }
+
+      ::selection {
+        background: hsl(43.477876106194714, 90.6650246305%, 57.8039215686%);
+        color: #ececec;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        background-color: hsl(230, 39%, 81%);
+        overflow: hidden;
+        text-rendering: optimizeLegibility;
+      }
+
+      a {
+        -moz-user-select: -moz-none;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+    </style>
+
+    <link rel="stylesheet" href="dist/css/style.css">
+  </head>
+
+  <body>
+    <section id="landing">
+      <div id="intro">
+        <p>
+          Hey, I'm
+          <span>Julia</span>.<br />
+          A <span>Twitch</span> streamer by night, who knows a thing or two on
+          <span>user interfaces</span> and <span>user experiences</span>.
+        </p>
+      </div>
+
+      <div id="social">
+        <p>
+          You can find me on
+          <a href="twitch.tv/chikari" target="_blank" rel="noopener">twitch</a><span>,</span>
+          <br />request a résumé at
+          <a href="mailto:chikaritv@gmail.com?Subject=O%20hi%20there..."
+            target="_top">ChikariTV@gmail.com</a><span>,</span>
+          <br /> or tweet @me
+          <a href="https://twitter.com/chikaritv" target="_blank" rel="noopener">twitter</a>
+        </p>
+      </div>
+
+      <section id="nav" class="button-container">
+        <div id="who-button" class="button" onclick="navButtonHandler('who-button', 'who')"></div>
+        <div id="what-button" class="button" onclick="navButtonHandler('what-button', 'what')"></div>
+        <div class="slider"></div>
+      </section>
+    </section>
+
+    <section id="page-container">
+      <div id="who-page" class="page"></div>
+      <div id="what-page" class="page"></div>
+    </section>
+  </body>
+
+</html>

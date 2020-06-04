@@ -1,0 +1,54 @@
+/**
+ * Landing page layout for tablet devices.
+ *
+ * Copyright @ Jun 2020
+ */
+
+#page-container {
+  & .page {
+    & p {
+      font-size: 3.5vw;
+    }
+  }
+
+  & #who-page {
+    grid-template-rows: 5% 20% 5% 65% 5%;
+
+    & .header {
+      font-size: 3.75rem;
+      line-height: 3.75rem;
+    }
+  }
+
+  & #what-page {
+    & p {
+      font-size: 3vw;
+    }
+
+    & #projects-container {
+      & .project {
+        font-size: 2.5rem;
+      }
+    }
+
+    & .button-container {
+      & .button {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (orientation: landscape) {
+  #page-container {
+    & .page {
+      & p {
+        font-size: 2.25vw !important;
+      }
+    }
+
+    & #who-page {
+      grid-template-rows: 5% 30% 5% 55% 5%;
+    }
+  }
+}

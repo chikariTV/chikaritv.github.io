@@ -1,0 +1,33 @@
+{
+  "name": "chikariTV-portfolio",
+  "version": "0.1.0",
+  "description": "Mock Demo for twitch.tv/chikari.",
+  "author": "Jun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chikariTV/chikaritv.github.io/issues"
+  },
+  "homepage": "https://chikari.tv",
+  "dependencies": {
+    "animejs": "^3.2.0",
+    "hammerjs": "^2.0.8",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0"
+  },
+  "browserslist": [
+    "> 5%"
+  ],
+  "scripts": {
+    "lint": "stylelint 'css/**/*.css'",
+    "build": "postcss css/style.css -d dist/css --base css --config configs",
+    "start:dev": "cross-env NODE_ENV=development npm run build",
+    "start:prod": "cross-env NODE_ENV=production npm run build"
+  }
+}
