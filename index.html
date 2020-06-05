@@ -45,38 +45,35 @@
       }
 
       :root {
-        --primary-color: hsl(185, 48%, 67%);
-        --primary-color-darker: hsl(184, 73%, 35%);
-        --primary-color-lighter: hsl(185, 100%, 90%);
-        --secondary-color: hsl(43.477876106194714, 90.6650246305%, 57.8039215686%);
-        --background-color: hsl(230, 39%, 81%);
-        --page-background-color: #fff;
-        --black: #000;
+        --primary-color: hsl(209, 57%, 76%);
+        --secondary-color: hsl(36, 97%, 61%);
+        --tertiary-color: hsl(37, 92%, 72%);
+        --background-color: hsl(207, 20%, 91%);
+        --white: hsl(0, 0%, 94%);
+        --black: hsl(0, 0%, 7%);
+
         --custom-serif-font: "Noto Serif JP";
         --custom-sans-font: "Noto Sans JP";
+
         --border-radius: 1.25rem;
         --z-depth-2:
-          0 4px 5px 0 rgba(0, 0, 0, 0.14),
-          0 1px 10px 0 rgba(0, 0, 0, 0.12),
-          0 2px 4px -1px rgba(0, 0, 0, 0.3);
+          0 4px 5px 0 hsla(0, 0%, 0%, 0.14),
+          0 1px 10px 0 hsla(0, 0%, 0%, 0.12),
+          0 2px 4px -1px hsla(0, 0%, 0%, 0.3);
         --z-depth-3:
-          0 8px 17px 2px rgba(0, 0, 0, 0.14),
-          0 3px 14px 2px rgba(0, 0, 0, 0.12),
-          0 5px 5px -3px rgba(0, 0, 0, 0.2);
-
-        a {
-          outline: 0;
-        }
+          0 8px 17px 2px hsla(0, 0%, 0%, 0.14),
+          0 3px 14px 2px hsla(0, 0%, 0%, 0.12),
+          0 5px 5px -3px hsla(0, 0%, 0%, 0.2);
       }
 
       ::-moz-selection {
-        background: hsl(43.477876106194714, 90.6650246305%, 57.8039215686%);
-        color: #ececec;
+        background: var(--tertiary-color);
+        color: var(--white);
       }
 
       ::selection {
-        background: hsl(43.477876106194714, 90.6650246305%, 57.8039215686%);
-        color: #ececec;
+        background: var(--tertiary-color);
+        color: var(--white);
       }
 
       html {
@@ -84,7 +81,7 @@
       }
 
       body {
-        background-color: hsl(230, 39%, 81%);
+        background-color: var(--background-color);
         overflow: hidden;
         text-rendering: optimizeLegibility;
       }
@@ -93,6 +90,7 @@
         -moz-user-select: -moz-none;
         -webkit-user-select: none;
         user-select: none;
+        outline: 0;
       }
     </style>
 
