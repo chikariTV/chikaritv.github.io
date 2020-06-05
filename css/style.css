@@ -10,3 +10,8 @@
 
 @import "tablet/tablet.css" (min-width: 600px) and (min-height: 600px) and (max-width: 1159px);
 @import "desktop/desktop.css" (min-width: 1200px);
+
+html {
+    visibility: visible;
+    opacity: 1;
+}
