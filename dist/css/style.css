@@ -365,8 +365,8 @@ template {
 #landing {
   display: grid;
   grid-template-areas: '. logo .' '. intro .' '. social .' '. nav .';
-  grid-template-columns: 5% 1fr 5%;
-  grid-template-rows: 10% 1fr 30% 10%;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 10% 50% 30% 10%;
   height: 100%;
   width: 100%;
   align-items: center;
@@ -482,7 +482,7 @@ template {
 
 @media screen and (min-width: 320px) and (max-width: 1000px) and (orientation: landscape) {
   #landing {
-    grid-template-rows: 10% 1fr 30% 10%
+    grid-template-rows: 10% 50% 30% 10%
   }
       #landing #intro p {
         font-size: 3.5vw;
@@ -510,8 +510,8 @@ template {
 #page-container {
   display: inline-grid;
   grid-template-areas: '. . . . . .' '. who . . what .' '. . . . . .';
-  grid-template-columns: 2.5% 1fr 2.5% 2.5% 1fr 2.5%;
-  grid-template-rows: 10% 1fr 10%;
+  grid-template-columns: 2.5% 45% 2.5% 2.5% 45% 2.5%;
+  grid-template-rows: 10% 80% 10%;
   height: 100%;
   left: -100%;
   position: absolute;
@@ -526,7 +526,7 @@ template {
     color: var(--black);
     display: grid;
     font-family: var(--custom-sans-font);
-    grid-template-columns: 5% 1fr 5%
+    grid-template-columns: 5% 90% 5%
   }
 
 #page-container .page p {
@@ -541,7 +541,7 @@ template {
 #page-container #who-page {
     grid-area: who;
     grid-template-areas: '. . .' '. heading .' '. content .' '. . .';
-    grid-template-rows: 5% 20% 1fr 5%
+    grid-template-rows: 5% 20% 70% 5%
   }
 
 #page-container #who-page .header {
@@ -578,8 +578,8 @@ template {
       align-items: center;
       justify-items: center;
       place-items: center;
-      grid-template-rows: 5% 1fr 1fr 1fr 5%;
-      grid-template-columns: 5% 1fr 5%
+      grid-template-rows: 5% 30% 30% 30% 5%;
+      grid-template-columns: 5% 90% 5%
     }
 
 #page-container #what-page #projects-container .project {
@@ -628,7 +628,7 @@ template {
       }
 
     #page-container #who-page {
-      grid-template-rows: 10% 25% 1fr 10%
+      grid-template-rows: 10% 25% 55% 10%
     }
         #page-container #who-page .header p {
           font-size: 3vw;
@@ -642,8 +642,8 @@ template {
 
       #page-container #what-page #projects-container {
         display: inline-grid;
-        grid-template-rows: 10% 1fr 10%;
-        grid-template-columns: 10% 1fr 1fr 1fr 10%;
+        grid-template-rows: 10% 90% 10%;
+        grid-template-columns: 10% 30% 30% 30% 10%;
         grid-template-areas: '. . . . .' '. p1 p2 p3 .' '. . . . .'
       }
 
@@ -775,8 +775,8 @@ template {
   border-top-right-radius: var(--border-radius);
   box-shadow: var(--z-depth-2);
   grid-template-areas: '. . . .' '. who what .';
-  grid-template-columns: 5% 1fr 1fr 5%;
-  grid-template-rows: 5% 1fr;
+  grid-template-columns: 5% 45% 45% 5%;
+  grid-template-rows: 5% 95%;
   height: 90%;
   left: 10%;
   min-height: 55rem;
@@ -798,7 +798,7 @@ template {
     }
 
   #page-container #who-page {
-    grid-template-rows: 5% 25% 1fr 5%
+    grid-template-rows: 5% 25% 65% 5%
   }
       #page-container #who-page .header p {
         font-size: 2.25vw;
